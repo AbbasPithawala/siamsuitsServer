@@ -28,8 +28,8 @@ const s3 = new AWS.S3({
 
 var ObjectId = require('mongoose').Types.ObjectId; 
 const PicBaseUrl = "https://siamsuitsimages.s3.ap-northeast-1.amazonaws.com/images/";
-const PicBaseUrl3 = "http://localhost:4545/";
-// const PicBaseUrl3 = "http://52.195.10.133/";
+// const PicBaseUrl3 = "http://localhost:4545/";
+const PicBaseUrl3 = "http://13.231.215.153/";
 
 const GroupOrderSerializer = data => ({
   _id: data._id,
