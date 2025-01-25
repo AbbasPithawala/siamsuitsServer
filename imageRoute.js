@@ -12,7 +12,7 @@ const AWS = require("aws-sdk");
 
 const KEY_ID = process.env.ACCESS_KEY;
 const SECRET_ID = process.env.SECRET_KEY;
-const BucketName = "siamsuitsimages";
+const BucketName = "siamsuits";
 
 const s3 = new AWS.S3({
   accessKeyId: KEY_ID,

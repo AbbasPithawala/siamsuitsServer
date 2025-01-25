@@ -25,7 +25,8 @@ const s3 = new AWS.S3({
 })
 // const { axiosInstance } = require("../../../client/src/config");
 
-const PicBaseUrl = "https://siamsuitsimages.s3.ap-northeast-1.amazonaws.com/images/";
+const PicBaseUrl = "https://siamsuits.s3.ap-northeast-1.amazonaws.com/images/";
+//https://siamsuits.s3.ap-northeast-1.amazonaws.com/7299938e-f53d-4dfd-8b42-e7e78a96758c.jpg
 // const PicBaseUrl3 = "http://localhost:4545/";
 const PicBaseUrl3  = "http://13.231.215.153/";
 
