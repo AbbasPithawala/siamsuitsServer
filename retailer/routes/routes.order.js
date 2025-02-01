@@ -2357,6 +2357,7 @@ html = html +
     })
 
   }catch(err){
+    console.log(err)
     return res.json({
       message: err.message,
       status: false,
