@@ -2372,8 +2372,8 @@ router.post('/sendMail', auth, async(req, res) => {
       port: 465,
       secure: true, // use SSL
       auth: {
-          user: 'abbas.pixlrit@gmail.com',
-          pass: 'xbhaknhuxcntgkij'
+          user: 'abbaspithawala098@gmail.com',
+          pass: 'ljphkylutgfehqpc'
       }
   });
   // let order = req.body.order;
@@ -2428,7 +2428,7 @@ router.post('/sendMail', auth, async(req, res) => {
     })
   }catch(err){
 
-    console.log(err)
+    console.log("error: ",  err)
     return res.json({
       status: false,
       message: err.message,
@@ -2483,7 +2483,7 @@ router.post('/checkPdf', auth, async(req, res) => {
   }
   s3.upload(params, (err, data) => {
     if(err){
-      console.log(err)
+      console.log(err.message)
     }else{
       // fs.unlink(filePath, (err) => {
       //   if(!err){
