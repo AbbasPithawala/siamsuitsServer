@@ -28,7 +28,7 @@ const s3 = new AWS.S3({
 const PicBaseUrl = "https://siamsuits.s3.ap-northeast-1.amazonaws.com/images/";
 //https://siamsuits.s3.ap-northeast-1.amazonaws.com/7299938e-f53d-4dfd-8b42-e7e78a96758c.jpg
 // const PicBaseUrl3 = "http://localhost:4545/";
-const PicBaseUrl3  = "http://13.231.215.153/";
+const PicBaseUrl3  = "http://18.181.186.167/";
 
 
 const OrderSerializer = data => ({
@@ -2335,7 +2335,7 @@ html = html +
     // doc.save()
     // doc.end()
     const page  = await browser.newPage()
-    await page.setContent(html)
+    await page.setContent(html, { timeout: 60000, waitUntil: 'networkidle0' })
     await page.emulateMediaFeatures('screen')
     await page.pdf({
         path: 'pdf/'+ order.orderId +'.pdf',
