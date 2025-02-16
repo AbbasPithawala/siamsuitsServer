@@ -28,7 +28,7 @@ const s3 = new AWS.S3({
 const PicBaseUrl = "https://siamsuits.s3.ap-northeast-1.amazonaws.com/images/";
 //https://siamsuits.s3.ap-northeast-1.amazonaws.com/7299938e-f53d-4dfd-8b42-e7e78a96758c.jpg
 // const PicBaseUrl3 = "http://localhost:4545/";
-const PicBaseUrl3  = "http://18.181.186.167/";
+const PicBaseUrl3  = "http://54.238.90.95/";
 
 
 const OrderSerializer = data => ({
@@ -2363,7 +2363,10 @@ html = html +
       status: false,
       data: null
     })
-  }
+  }finally {
+    await browser.close(); // Ensure browser closes properly
+}
+
 })
 
 router.post('/sendMail', auth, async(req, res) => {
