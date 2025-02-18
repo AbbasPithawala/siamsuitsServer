@@ -2399,7 +2399,7 @@ router.post('/sendMail', auth, async(req, res) => {
 '</div>';
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: '<abbas.pixlrit@gmail.com>', // sender address
+    from: '<abbaspithawala098@gmail.com>', // sender address
     to: order[0]['retailer_id']['email_recipients'], // list of receivers
     subject: order[0]['orderId'], // Subject line
     text: "Siam suits", // plain text body
